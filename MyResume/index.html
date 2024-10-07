@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨骏程的个人简历</title>
+    <link rel="stylesheet" href="css/new_file.css">
+</head>
+<body>
+	<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <img src="img/k.png" alt="" class="avatar">
+                <h1>杨骏程</h1>
+                <p class="subtitle">性别：男	年龄:21 住址：四川省遂宁市射洪市</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#bg">教育背景</a></li>
+                    <li><a href="#experience1">项目经历</a></li>
+					<li><a href="#skills">专业技能</a></li>
+                   <!-- <li><a href="#projects">作品集</a></li> -->
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="bg" class="section">
+            <div class="container">
+                <h2>教育背景</h2>
+				<p class="important">2021--2025 成都理工大学</p>
+                <p>计算机类数字媒体技术 | 本科</p>
+				<p>主修课程：<li>高等数学 线性代数 离散数学 概率论与数与统计</li>
+				            <li>数据结构 计算机组成原理 计算机网络 计算机操作系统</li>
+							<li>Java语言设计 Web开发技术基础 C/C++程序设计 </li>
+							<li>数字图像处理 虚拟现实技术 游戏开发技术 计算机动画 媒体软件与画面艺术</li>
+				</p>
+            </div>
+        </section>
+
+        
+
+        <section id="experience1" class="section">
+            <div class="container">
+                <h2>项目经历</h2>
+				<article>
+				    <p class="important1">2024.6--2024.6	绩效考核系统</p>
+                    <h3>项目介绍</h3>
+				    <li>一个绩效考核系统，通过读取数据库中的表得到数据并在写好的Winform窗体应用中显示出来，并且可以通过在Winform窗体应用中修改数据同时修改数据库中的数据。
+                        数据库中存在人员管理、身份基数、人员考核、考核系数四张表，通过Winform窗体应用完成对四张表的增删改查。运用到了分层架构、工厂模式、泛型缓存等编程思想 </li>
+                    <h3>具体内容：</h3>
+					<li>1.窗体搭建：使用winform中的各种控件，搭建对应窗体，绑定对应事件从而完成相关交互</li>
+                    <li>2.数据绑定：通过对数据库的操作和对winform窗体的操作完成数据的增删改查</li>
+
+				    <li>技术栈：C#、SQL server、Winform</li>
+				    <a href="project-details.html?projectId=1" target="_self">查看项目</a>
+				</article>
+               <article>
+                   <p class="important1">2024.7--2024.8	  多温湿度采集系统</p>
+                   <h3>项目介绍</h3>
+                   <li>使用winform客户端通过Modbus协议实现采集并监控下位数据，报警与设置数据刷新频率功能并同时具备温湿度历史变化视图 </li>
+				   <h3>具体内容：</h3>
+				   <li>1.登录功能：使用SQL server数据库存储管理员信息</li>
+                   <li>2.数据采集与监控：管理员登录后可以检查各个设备信息，实时监控各个从站的温度和湿度数据</li>
+                   <li>3.报警功能：当设备的温度和湿度大于预设值时，系统会发送警报，并保存警报信息，管理员可以查看历史警报及其处理信息</li>
+                   <li>技术栈：C#、SQL server、Winform、Modbus</li>
+                   <a href="project-details.html?projectId=2" target="_self">查看项目</a>
+               </article>
+            </div>
+        </section>
+		<section id="skills" class="section">
+		    <div class="container">
+		        <h2>专业技能</h2>
+		        <ul>
+		            <li>熟悉C#的基本语法,熟练掌握常用的数据结构和算法，熟悉多线程，泛型，协程，委托，事件，反射，特性等;</li>
+					<li>熟练使用Winform，熟悉winform窗体框架，熟悉winform各种控件的使用;</li>
+                    <li>熟悉MySQL,SQL server数据库的使用</li>
+                    <li>熟练使用XML、JSON对数据进行保存读取</li>
+                    <li>了解网络编程原理，TCP,UDP,HTTP等网络协议</li>
+                    <li>熟悉Modbus通讯传输协议</li>            <!-- 添加更多技能 -->
+				</ul>
+		    </div>
+		</section>
+
+        <!-- <section id="projects" class="section">
+            <div class="container">
+                <h2>作品集</h2>
+                <article>
+                    <h3>项目名称</h3>
+                    <p>项目描述</p>
+                    <p>技术栈：[技术1, 技术2]</p>
+                    <a href="#">查看项目</a>
+                </article> -->
+                <!-- 添加更多项目 -->
+      <!--      </div>
+        </section> -->
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>联系方式</h2>
+                <p>Email: 18116753910@163.com</p>
+                <p>电话: +18116753910</p>
+                <!-- 添加其他联系方式 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 yjc. All rights reserved.</p>
+        </div>
+    </footer>
+	</div>
+	
+	
+</body>
+</html>

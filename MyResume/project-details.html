@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情 - 杨骏程的个人简历</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        function showProject() {
+            var projectId = getParameterByName('projectId');
+            var projectDetails = document.getElementById('project-details');
+
+            projectDetails.innerHTML = ''; // 清空现有内容
+
+            if (projectId === '1') {
+			    projectDetails.innerHTML = `
+			        <h2>绩效考核系统</h2>
+			        <p>一个绩效考核系统，通过读取数据库中的表得到数据并在写好的Winform窗体应用中显示出来，并且可以通过在Winform窗体应用中修改数据同时修改数据库中的数据。
+                        数据库中存在人员管理、身份基数、人员考核、考核系数四张表，通过Winform窗体应用完成对四张表的增删改查。运用到了分层架构、工厂模式、泛型缓存等编程思想</p>
+			        <h3>技术栈</h3>
+			        <ul>
+			            <li>C#、Winform、SQL server</li>
+			          
+			            <!-- 添加更多技术 -->
+			        </ul>
+			        <h3>截图/演示视频</h3>
+					<img src="img/2/1.png" alt="项目截图" class="project-image">
+					<img src="img/2/2.png" alt="项目截图" class="project-image">
+					<img src="img/2/3.png" alt="项目截图" class="project-image">
+			    
+			        
+			    `;
+			}
+            if (projectId === '2') {
+                projectDetails.innerHTML = `
+                    <h2>多温湿度采集系统</h2>
+                    <p>使用winform客户端通过Modbus协议实现采集并监控下位数据，报警与设置数据刷新频率功能并同时具备温湿度历史变化视图</p>
+                    <h3>技术栈</h3>
+                    <ul>
+                        <li>C#</li>
+						<li>Winform</li>
+                        <li>SQL server</li>
+                        <li>Modbus</li>
+                        <!-- 添加更多技术 -->
+                    </ul>
+                    <h3>截图/演示视频</h3>
+					<img src="img/1/1.png" alt="项目截图" class="project-image">
+					<img src="img/1/2.png" alt="项目截图" class="project-image">
+					<img src="img/1/3.png" alt="项目截图" class="project-image">
+					<img src="img/1/4.png" alt="项目截图" class="project-image">
+                 
+                `;
+            } 			    
+            // 添加更多项目
+        }
+
+        window.onload = showProject;
+    </script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <h1>项目详情</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">返回主页</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <div id="project-details">
+                        <!-- 项目内容将在这里显示 -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 yjc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
